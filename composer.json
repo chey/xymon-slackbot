@@ -1,0 +1,42 @@
+{
+    "name": "chey/xymon-slackbot",
+    "type": "project",
+    "license": "MIT",
+    "description": "Slack bot that interfaces with Xymon.",
+    "authors": [
+        {
+            "name": "chey",
+            "homepage": "https://github.com/chey",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ratchet/pawl": "^0.2.2",
+        "guzzlehttp/guzzle": "^6.2",
+        "chey/slackphp": "dev-master",
+        "chey/xyplib": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "XymonSlack\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "XymonSlack\\Test\\": "tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/chey/slackphp"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/chey/xyplib"
+        }
+    ]
+}
